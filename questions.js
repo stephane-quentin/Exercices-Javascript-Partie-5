@@ -9,7 +9,8 @@ var numbersArrayCreation = function () {
 }
 
 var ElementReplacement = function (languages) {
-  languages[2] = 'Javascript' // Le premier emplacement d'un tableau est le 0 donc pour modifier le 3ème, on met 2
+  languages[2] = 'Javascript'; // Le premier emplacement d'un tableau est le 0 donc pour modifier le 3ème, on met 2
+  // languages.splice(2, 1, 'Javascript'); 1er argument (2), emplacement  , 2ème argument fonction
   return languages;
 }
 
@@ -19,7 +20,7 @@ var AddElementToLanguagesArray = function (languages) {
 }
 
 var AddElementToNumbersArray = function (numbers) {
-  numbers.unshift(-2,-1); //unshift ajoute au début du tableau
+  numbers.unshift(-2,-1); //fonction unshift ajoute au début du tableau
   return numbers;
 }
 
@@ -51,5 +52,5 @@ var arraySort = function (socialMedia) {
 var arrayInvert = function (languages){
 
 
-  return languages.reverse(); // reverse, inverse un tableau
+  return languages.reverse(); // reverse, inverse les éléments d'un tableau
 }
